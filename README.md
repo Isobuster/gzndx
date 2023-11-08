@@ -15,4 +15,5 @@ An application, when it loads a *.gz file, can now first look for a *.gzndx file
 The *.gzndx format starts with a small header, followed by a byte per byte copy of all 'point' records stored in memory.<br>
 The *.gzndx header data is detailed in GZIndexStructs.h (GZIndexFileHeader).
 
-For example files: IsoBuster versions 5.3 and up create *.gzndx files on the fly when opening *.gz files (Check Settings: Options / Image Files / ISO - BIN - TAO - GZ)
+If you want some example *.gzndx files:<br>
+IsoBuster versions 5.3 and up create *.gzndx files on the fly when opening *.gz files (Check Settings: Options / Image Files / ISO - BIN - TAO - GZ)
