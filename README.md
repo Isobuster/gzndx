@@ -5,8 +5,8 @@ A *.gzndx file is an index file to easily and randomly access *.gz files.
 A *.gz file is a monolythic block of compressed data.  The format implements no type of index to quickly jump to an uncompressed location in the file.  This makes random access impossible, unless the file is fully decompressed first.
 
 Mark Adler created some excellent code that decompresses a *.gz file in temporary memory to create an index (kept in memory)<br>
-https://github.com/madler/zlib/blob/master/examples/zran.h<br>
-https://github.com/madler/zlib/blob/master/examples/zran.c<br>
+// https://github.com/madler/zlib/blob/v1.2.13/examples/zran.h<br>
+// https://github.com/madler/zlib/blob/v1.2.13/examples/zran.c<br>
 Once this is done it is possible to access the file randomly using the index that was created in memory
 
 The *.gzndx format takes this a step further by dumping the entirity of the memory-stored index into a file.  
